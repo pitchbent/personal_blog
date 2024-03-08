@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="http://localhost:8080/">
+  <title>My Personal Blog</title>
+  <subtitle>Writing about my personal, mostly electronics related projects.</subtitle>
+  <link href="http://localhost:8080/feed.xml" rel="self" />
+  <link href="http://localhost:8080/" />
+  
+  <updated>2024-03-08T11:12:52Z</updated>
+  <id>http://localhost:8080/</id>
+  <author>
+    <name>Julius Bartel</name>
+    <email>hello@bartel.tech</email>
+  </author>
+  <entry>
+    <title>Gude!</title>
+    <link href="http://localhost:8080/blog/gude/" />
+    <updated>2024-03-08T11:12:52Z</updated>
+    <id>http://localhost:8080/blog/gude/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;p&gt;Gude! This is the first post on my new blog. It runs eleventy and the awesome starter pack by Lene Saile. Enjoy!&lt;/p&gt;
+</content
+    >
+  </entry>
+</feed>
