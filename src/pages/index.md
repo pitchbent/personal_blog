@@ -8,7 +8,7 @@ blog:
   intro: "Enjoy four of the most recent blog posts!"
 ---
 
-## My personal blog
+## My Personal Blog
 
 Gude! Or "hello world" as others may say. Welcome to my blog about my personal projects i do for fun and improvement of my skills.
 
