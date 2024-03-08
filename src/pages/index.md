@@ -10,6 +10,6 @@ blog:
 
 ## My Personal Blog
 
-Gude! Or "hello world" as others may say. Welcome to my blog about my personal projects i do for fun and improvement of my skills.
+Gude! Or "hello world" as others may say. Welcome to my blog about my personal projects i do for fun and improvement of my skills. The skills.
 
 
