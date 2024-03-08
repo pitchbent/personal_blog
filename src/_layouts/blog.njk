@@ -4,19 +4,15 @@ masonry: true
 ---
 
 <article class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-secondary)">
-    <div
-      class="section__inner flow region"
-      style="--region-space-top: var(--space-xl-2xl)"
-    >
+    <header class="full | section" style="--spot-color: var(--color-primary)">
+    <div 
+      class="section__inner flow region">
       <h1 class="text-center text-base-light">{{ title }}</h1>
     </div>
-    {% include 'svg/divider-edgy.svg' %}
+    {% include 'svg/divider-custom.svg' %}
   </header>
 
-  <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
-    {{ content | safe }}
-  </div>
+
 
   <ul class="blogcards | grid" role="list" data-rows="masonry" data-layout="50-50">
     <!-- loop posts -->

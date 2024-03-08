@@ -12,10 +12,10 @@
 
   --gradient-rainbow: linear-gradient(
     90deg,
-    #cf4662 10%,
+    #2372a3 5%,
     #fbbe25 30%,
     #62c95c 50%,
-    #08bccb 75%,
+    #08bccb 80%,
     #a977d5 90%
   );
   --gradient-conic: conic-gradient(
