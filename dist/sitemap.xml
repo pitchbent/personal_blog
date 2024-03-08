@@ -2,17 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   
-
-  
-  
-
-    <url>
-        <loc>http://localhost:8080/</loc>
-        <lastmod>2024-03-08T12:14:55.144Z</lastmod>
-    </url>
-    
-  
-  
   
   
   
@@ -45,7 +34,7 @@
 
     <url>
         <loc>http://localhost:8080/about/</loc>
-        <lastmod>2024-03-08T12:18:04.933Z</lastmod>
+        <lastmod>2024-03-08T12:22:59.734Z</lastmod>
     </url>
     
   
@@ -56,7 +45,18 @@
 
     <url>
         <loc>http://localhost:8080/blog/</loc>
-        <lastmod>2024-03-08T12:18:04.933Z</lastmod>
+        <lastmod>2024-03-08T12:22:59.734Z</lastmod>
+    </url>
+    
+  
+  
+
+  
+  
+
+    <url>
+        <loc>http://localhost:8080/</loc>
+        <lastmod>2024-03-08T12:22:59.734Z</lastmod>
     </url>
     
   
@@ -67,7 +67,7 @@
 
     <url>
         <loc>http://localhost:8080/imprint/</loc>
-        <lastmod>2024-03-08T12:18:04.933Z</lastmod>
+        <lastmod>2024-03-08T12:22:59.734Z</lastmod>
     </url>
     
   
@@ -78,7 +78,7 @@
 
     <url>
         <loc>http://localhost:8080/privacy/</loc>
-        <lastmod>2024-03-08T12:18:04.933Z</lastmod>
+        <lastmod>2024-03-08T12:22:59.734Z</lastmod>
     </url>
     
   
@@ -89,7 +89,7 @@
 
     <url>
         <loc>http://localhost:8080/blog/gude/</loc>
-        <lastmod>2024-03-08T12:18:04.934Z</lastmod>
+        <lastmod>2024-03-08T12:22:59.735Z</lastmod>
     </url>
     
   

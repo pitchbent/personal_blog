@@ -5,7 +5,7 @@
   <link href="http://localhost:8080/feed.xml" rel="self" />
   <link href="http://localhost:8080/" />
   
-  <updated>2024-03-08T12:18:04Z</updated>
+  <updated>2024-03-08T12:22:59Z</updated>
   <id>http://localhost:8080/</id>
   <author>
     <name>Julius Bartel</name>
@@ -14,12 +14,12 @@
   <entry>
     <title>Gude!</title>
     <link href="http://localhost:8080/blog/gude/" />
-    <updated>2024-03-08T12:18:04Z</updated>
+    <updated>2024-03-08T12:22:59Z</updated>
     <id>http://localhost:8080/blog/gude/</id>
     <content
       xml:lang="en_EN"
       type="html"
-      >&lt;p&gt;Gude! This is the first post on my new blog. It runs eleventy and the awesome starter pack by Lene Saile. Enjoy!&lt;/p&gt;
+      >&lt;p&gt;Gude! This is the first post on my new blog. It runs eleventy and the awesome starter pack by Lene Saile. Enjoy! Yeeha&lt;/p&gt;
 </content
     >
   </entry>
