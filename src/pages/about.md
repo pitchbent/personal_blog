@@ -13,7 +13,7 @@ youtube: true
 **Hello!**
 
 My Name is Julius. I just finished my masters degree in information technology at the University of Applied Sciences Mannheim.
-Reload!
+
 # Resumee
 
 ## Work Experience
