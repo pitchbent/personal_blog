@@ -1,0 +1,932 @@
+
+
+<!doctype html>
+<html lang="en">
+  <!-- The order of elements in the head follows recommendations by Harry Roberts. learn more here: https://www.youtube.com/watch?v=MHyAOZ45vnU -->
+
+  <head>
+    <!-- charset/http-equiv/viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>
+      
+        Style Guide
+      
+    </title>
+
+    <!-- 4 synchronous js  -->
+    <!-- load theme toggle first to avoid color flashing on page load and inline render blocking js  -->
+    
+
+    <script>
+      // prettier-ignore
+      (()=>{var r="theme-preference",c="light",u="dark",t={value:n()};window.onload=()=>{let e=document.querySelector("#light-theme-toggle"),o=document.querySelector("#dark-theme-toggle"),d=document.querySelector("[data-theme-switcher]");d&&(d.removeAttribute("hidden"),a(),e.addEventListener("click",()=>l("light")),o.addEventListener("click",()=>l("dark")),e.setAttribute("aria-pressed",t.value==="light"),o.setAttribute("aria-pressed",t.value==="dark"))},window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",({matches:e})=>{t.value=e?"dark":"light",i()});function l(e){t.value=e,document.querySelector("#light-theme-toggle").setAttribute("aria-pressed",e==="light"),document.querySelector("#dark-theme-toggle").setAttribute("aria-pressed",e==="dark"),i()}function n(){return localStorage.getItem(r)?localStorage.getItem(r):window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}function i(){localStorage.setItem(r,t.value),a()}function a(){document.firstElementChild.setAttribute("data-theme",t.value),document.querySelector("#light-theme-toggle")?.setAttribute("aria-label",c),document.querySelector("#dark-theme-toggle")?.setAttribute("aria-label",u)}a()})();
+
+    </script>
+
+    <!--  inline base schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:8080#website",
+        "url": "http://localhost:8080",
+        "name": "bartel.tech",
+        "description": "Personal blog to showcase my projects &amp; resumee",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+
+
+    <!--  inline blogpost schema  -->
+    
+
+    <link rel="stylesheet" href="/assets/css/global.css?469a-7142-cb7d" />
+
+    <!-- preloads -->
+    <link
+      rel="preload"
+      href="/assets/fonts/figtree/figtree-variable[wght].woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link
+      rel="preload"
+      href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- preloads in page data -->
+
+    <!-- defered js  -->
+
+    
+
+    
+
+    
+
+    
+      <!-- easteregg js, if true in meta -->
+      <script src="/assets/scripts/easteregg.js?469a-7142-cb7d" defer></script>
+    
+
+    <!-- everything else: meta tags, icons, open graph etc.  -->
+    <base href="/styleguide/" />
+
+<meta
+  name="description"
+  content="
+  
+    Personal blog to showcase my projects &amp; resumee
+  
+  "
+/>
+
+<meta name="theme-color" content="#DD4462" />
+<!-- Search Engines -->
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+<!-- Made with Eleventy! -->
+<meta name="generator" content="Eleventy v2.0.1" />
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no" />
+<!-- supports both dark and light color schemes, page author prefers light as default. -->
+<meta name="color-scheme" content="light dark" />
+<!-- activates page transitions -->
+<meta name="view-transition" content="same-origin" />
+
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="http://localhost:8080/styleguide/" />
+
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt" />
+
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="http://localhost:8080/styleguide/" />
+<meta property="og:type" content="website" />
+<meta
+  property="og:title"
+  content="Style Guide"
+/>
+<meta
+  property="og:image"
+  content="
+    http://localhost:8080/assets/images/template/opengraph-default.jpg
+  "
+/>
+<meta
+  property="og:image:alt"
+  content="
+    Personal Blog
+  "
+/>
+<meta
+  property="og:description"
+  content="Personal blog to showcase my projects &amp; resumee"
+/>
+<meta property="og:site_name" content="bartel.tech" />
+<meta property="og:locale" content="en_EN" />
+<meta property="article:author" content="Julius Bartel" />
+
+<!-- Twitter specific head data was removed in v2 -->
+
+<!-- RSS Autodiscovery. Loops over meta.blog.feedLinks -->
+
+  <link
+    rel="alternate"
+    type="application/atom+xml"
+    title="Atom Feed: bartel.tech"
+    href="/feed.xml"
+  />
+
+
+<!-- Favicon: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+  </head>
+
+  <body class="base">
+    <a href="#main" class="skip-link">Skip to content</a>
+
+<header class="wrapper">
+  <div class="repel ontop">
+    <a
+      href="/"
+      class="logo | cluster"
+      
+    >
+      <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 24 24"
+  width="1em"
+  height="1em"
+  fill="currentColor"
+	aria-hidden="true"
+	focusable="false"
+>
+  <path
+    fill-rule="evenodd"
+    d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+      <span>bartel.tech</span>
+    </a>
+    
+
+
+
+<nav
+  id="mainnav"
+  class=" site-nav"
+  aria-label="Main"
+>
+  <ul class="cluster" role="list">
+    
+      <li>
+        <a
+          class="nav"
+          href="/about/"
+          
+          >About</a
+        >
+      </li>
+    
+      <li>
+        <a
+          class="nav"
+          href="/blog/"
+          
+          >Blog</a
+        >
+      </li>
+    
+      <li>
+        <a
+          class="nav"
+          href="/tags/"
+          
+          >Tags</a
+        >
+      </li>
+    
+  </ul>
+</nav>
+
+
+
+  </div>
+</header>
+
+
+    <main id="main" class="flow">
+<!-- Inspired by: https://stevenwoodson.com/blog/eleventy-style-guide-generator-step-by-step-guide-adding-to-an-existing-site/ -->
+
+<article class="styleguide | wrapper flow">
+  <header class="intro flow region">
+    <h1 class="gradient-text-linear">Style Guide</h1>
+
+    <p>
+      All design tokens can be found in <code>src/_data/designTokens</code>. <br />
+      This includes all baseline fonts, colors, sizes, and spacing.
+    </p>
+  </header>
+
+  <div class="full colors | section">
+    <section class="section__inner wrapper flow region">
+      <h2 class="heading-line">Colors</h2>
+
+      <p>Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print.</p>
+
+      <ul role="list"><li>
+            <div style="background-color: var(--color-base-dark"></div>
+
+            <p>
+              <code>var(--color-base-dark)</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-base-light"></div>
+
+            <p>
+              <code>var(--color-base-light)</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-primary-highlight"></div>
+
+            <p>
+              <code>var(--color-primary-highlight)</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-secondary-highlight"></div>
+
+            <p>
+              <code>var(--color-secondary-highlight)</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-tertiary-highlight"></div>
+
+            <p>
+              <code>var(--color-tertiary-highlight)</code>
+            </p>
+          </li></ul>
+
+      <h3 class="heading-line | mt-l-xl">Custom colors</h3>
+      <p>in <code>variables.css</code>. Some only change for dark theme.</p>
+
+      <ul role="list"><li>
+            <div style="background-color: var(--color-text)"></div>
+            <p>
+              <code>--color-text</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-text-accent)"></div>
+            <p>
+              <code>--color-text-accent</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-bg)"></div>
+            <p>
+              <code>--color-bg</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-bg-accent)"></div>
+            <p>
+              <code>--color-bg-accent</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-bg-accent-2)"></div>
+            <p>
+              <code>--color-bg-accent-2</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--)"></div>
+            <p>
+              <code>--</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-secondary)"></div>
+            <p>
+              <code>--color-secondary</code>
+            </p>
+          </li><li>
+            <div style="background-color: var(--color-tertiary)"></div>
+            <p>
+              <code>--color-tertiary</code>
+            </p>
+          </li></ul>
+
+      <h3 class="heading-line | mt-l-xl">Gradients</h3>
+
+      <ul role="list"><li>
+            <div style="background-image: var(--gradient-rainbow)"></div>
+
+            <p>
+              <code>--gradient-rainbow</code>
+              <br />
+              <!-- <code></code> -->
+            </p>
+          </li><li>
+            <div style="background-image: var(--gradient-conic)"></div>
+
+            <p>
+              <code>--gradient-conic</code>
+              <br />
+              <!-- <code></code> -->
+            </p>
+          </li><li>
+            <div style="background-image: var(--gradient-stripes)"></div>
+
+            <p>
+              <code>--gradient-stripes</code>
+              <br />
+              <!-- <code></code> -->
+            </p>
+          </li></ul>
+    </section>
+  </div>
+
+  <section class="fonts | flow region">
+    <h2 class="heading-line">Fonts</h2>
+
+    <ul class="fonts flow"><li class="font" style="font-family: var(--font-display)">
+          <h3 style="font-family: var(--font-display)">
+            Display
+          </h3>
+          <p>Display font stack for headings and large text.</p>
+          <p><strong>Font Families</strong>: Redhat, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif</p>
+          <code>var(--font-display)</code>
+        </li><li class="font" style="font-family: var(--font-base)">
+          <h3 style="font-family: var(--font-base)">
+            Base
+          </h3>
+          <p>Base font stack for body text.</p>
+          <p><strong>Font Families</strong>: Figtree, Optima, Candara, Noto Sans, source-sans-pro, sans-serif</p>
+          <code>var(--font-base)</code>
+        </li><li class="font" style="font-family: var(--font-mono)">
+          <h3 style="font-family: var(--font-mono)">
+            Mono
+          </h3>
+          <p>Monospace font for code and preformatted text.</p>
+          <p><strong>Font Families</strong>: RobotoMono, ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace</p>
+          <code>var(--font-mono)</code>
+        </li></ul>
+  </section>
+
+  <div class="full sizes | section">
+    <section class="section__inner wrapper flow region">
+      <h2 class="heading-line">Sizes</h2>
+
+      <p>
+        A minimum and maximum text size size allows you to pick the right size from a ratio, depending on the context size. The min and max sizes are in pixels and should be converted to appropiate sizes, per context. Fluid type and space scales were
+        <a href="https://utopia.fyi/type/calculator?c=320,19,1.2,1350,28,1.25,6,2,&amp;s=0.75|0.5|0.25,2|3|5|8|13,s-l&amp;g=s,l,xl,12"
+          >generated with Utopia</a
+        >.
+      </p>
+
+      <table class="sizes flow"><tr>
+            <th scope="row">
+              <h3>Step min 2</h3>
+            </th>
+            <td>
+              <span class="flow">
+                <p>13px to 16px</p>
+                <code>var(--size-step-min-2)</code>
+              </span>
+            </td>
+            <td class="sizes-example">
+              <p style="font-size:var(--size-step-min-2)">
+                Step min 2
+              </p>
+            </td>
+          </tr><tr>
+            <th scope="row">
+              <h3>Step min 1</h3>
+            </th>
+            <td>
+              <span class="flow">
+                <p>16px to 22px</p>
+                <code>var(--size-step-min-1)</code>
+              </span>
+            </td>
+            <td class="sizes-example">
+              <p style="font-size:var(--size-step-min-1)">
+                Step min 1
+              </p>
+            </td>
+          </tr><tr>
+            <th scope="row">
+              <h3>Step 0</h3>
+            </th>
+            <td>
+              <span class="flow">
+                <p>19px to 28px</p>
+                <code>var(--size-step-0)</code>
+              </span>
+            </td>
+            <td class="sizes-example">
+              <p style="font-size:var(--size-step-0)">
+                Step 0
+              </p>
+            </td>
+          </tr><tr>
+            <th scope="row">
+              <h3>Step 1</h3>
+            </th>
+            <td>
+              <span class="flow">
+                <p>23px to 35px</p>
+                <code>var(--size-step-1)</code>
+              </span>
+            </td>
+            <td class="sizes-example">
+              <p style="font-size:var(--size-step-1)">
+                Step 1
+              </p>
+            </td>
+          </tr><tr>
+            <th scope="row">
+              <h3>Step 2</h3>
+            </th>
+            <td>
+              <span class="flow">
+                <p>27px to 44px</p>
+                <code>var(--size-step-2)</code>
+              </span>
+            </td>
+            <td class="sizes-example">
+              <p style="font-size:var(--size-step-2)">
+                Step 2
+              </p>
+            </td>
+          </tr><tr>
+            <th scope="row">
+              <h3>Step 3</h3>
+            </th>
+            <td>
+              <span class="flow">
+                <p>33px to 55px</p>
+                <code>var(--size-step-3)</code>
+              </span>
+            </td>
+            <td class="sizes-example">
+              <p style="font-size:var(--size-step-3)">
+                Step 3
+              </p>
+            </td>
+          </tr><tr>
+            <th scope="row">
+              <h3>Step 4</h3>
+            </th>
+            <td>
+              <span class="flow">
+                <p>40px to 68px</p>
+                <code>var(--size-step-4)</code>
+              </span>
+            </td>
+            <td class="sizes-example">
+              <p style="font-size:var(--size-step-4)">
+                Step 4
+              </p>
+            </td>
+          </tr><tr>
+            <th scope="row">
+              <h3>Step 5</h3>
+            </th>
+            <td>
+              <span class="flow">
+                <p>47px to 86px</p>
+                <code>var(--size-step-5)</code>
+              </span>
+            </td>
+            <td class="sizes-example">
+              <p style="font-size:var(--size-step-5)">
+                Step 5
+              </p>
+            </td>
+          </tr><tr>
+            <th scope="row">
+              <h3>Step 6</h3>
+            </th>
+            <td>
+              <span class="flow">
+                <p>56px to 107px</p>
+                <code>var(--size-step-6)</code>
+              </span>
+            </td>
+            <td class="sizes-example">
+              <p style="font-size:var(--size-step-6)">
+                Step 6
+              </p>
+            </td>
+          </tr></table>
+    </section>
+  </div>
+
+  <section class="spacing | flow region">
+    <h2 class="heading-line">Spacing</h2>
+
+    <p>
+      Consistent spacing sizes, based on a ratio, with min and max sizes. This allows you to set spacing based on the context size. For example, min for mobile and max for desktop browsers.<br />
+      Fluid type and space scales were
+      <a href="https://utopia.fyi/space/calculator?c=320,19,1.2,1350,26,1.414,8,2,&amp;s=0.75|0.5|0.25,2|3|5|8|13,s-l&amp;g=s,l,xl,12">generated with Utopia</a>.
+    </p>
+
+    <table class="spacing flow"><tr>
+          <th scope="row">
+            <h3>XS</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>5px to 7px</p>
+              <code>var(--space-xs)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-xs); width:var(--space-xs);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>S</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>10px to 14px</p>
+              <code>var(--space-s)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-s); width:var(--space-s);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>M</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>14px to 21px</p>
+              <code>var(--space-m)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-m); width:var(--space-m);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>L</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>19px to 28px</p>
+              <code>var(--space-l)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-l); width:var(--space-l);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>XL</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>38px to 56px</p>
+              <code>var(--space-xl)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-xl); width:var(--space-xl);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>2XL</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>57px to 84px</p>
+              <code>var(--space-2xl)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-2xl); width:var(--space-2xl);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>3XL</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>95px to 140px</p>
+              <code>var(--space-3xl)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-3xl); width:var(--space-3xl);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>XS - S</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>5px to 14px</p>
+              <code>var(--space-xs-s)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-xs-s); width:var(--space-xs-s);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>S - M</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>10px to 21px</p>
+              <code>var(--space-s-m)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-s-m); width:var(--space-s-m);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>M - L</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>14px to 28px</p>
+              <code>var(--space-m-l)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-m-l); width:var(--space-m-l);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>L - XL</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>19px to 56px</p>
+              <code>var(--space-l-xl)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-l-xl); width:var(--space-l-xl);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>L - 2xl</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>38px to 84px</p>
+              <code>var(--space-l-2xl)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-l-2xl); width:var(--space-l-2xl);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>XL - 2XL</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>57px to 140px</p>
+              <code>var(--space-xl-2xl)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-xl-2xl); width:var(--space-xl-2xl);"
+            ></div>
+          </td>
+        </tr><tr>
+          <th scope="row">
+            <h3>2XL - 3xl</h3>
+          </th>
+          <td>
+            <span class="flow">
+              <p>95px to 224px</p>
+              <code>var(--space-2xl-3xl)</code>
+            </span>
+          </td>
+          <td>
+            <div
+              class="space"
+              style="height:var(--space-2xl-3xl); width:var(--space-2xl-3xl);"
+            ></div>
+          </td>
+        </tr></table>
+  </section>
+</article>
+</main>
+
+    <footer class="site-foot">
+  <div class="wrapper">
+    <div class="site-foot__inner">
+      <nav
+        class="site-foot__inner text-step-0"
+        aria-label="Complementary"
+      >
+        &copy; 2024
+        <a href="/" 
+          >bartel.tech <small>2.2.1</small>
+        </a>
+
+        
+          <a
+            href="/imprint/"
+            
+            >Imprint</a
+          >
+        
+          <a
+            href="/privacy/"
+            
+            >Privacy</a
+          >
+        
+      </nav>
+
+      <nav class="site-foot__inner" aria-label="Platforms">
+        <!-- gets the first item from the feed loop set in meta -->
+        <a
+          href="/feed.xml"
+          rel="alternate"
+          type="application/atom+xml"
+        >
+          <span class="visually-hidden">Atom Feed</span>
+          <div aria-hidden="true"><svg
+  role="img"
+  viewBox="0 0 24 24"
+  width="1em"
+  height="1em"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>RSS</title>
+  <path d="M4 11a9 9 0 0 1 9 9"></path>
+  <path d="M4 4a16 16 0 0 1 16 16"></path>
+  <circle cx="5" cy="19" r="1"></circle>
+</svg>
+</div>
+        </a>
+
+        
+          
+            <!-- regular platforms -->
+            <a href="https://github.com/pitchbent" rel="me">
+              <span class="visually-hidden">Github</span>
+              <div aria-hidden="true"><svg
+  role="img"
+  viewBox="0 0 24 24"
+  width="1em"
+  height="1em"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>GitHub</title>
+  <path
+    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+  ></path>
+  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+</svg>
+</div>
+            </a>
+          
+        
+          
+            <!-- regular platforms -->
+            <a href="https://chaos.social/@pitchbent" rel="me">
+              <span class="visually-hidden">Mastodon</span>
+              <div aria-hidden="true"><svg
+  role="img"
+  viewBox="0 0 24 24"
+  width="1em"
+  height="1em"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="2"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title>Mastodon</title>
+  <path
+    d="M21.887,5.996C21.579,3.682 19.589,1.856 17.232,1.504C16.833,1.445 15.326,1.226 11.834,1.226L11.808,1.226C8.313,1.226 7.565,1.445 7.166,1.504C4.871,1.849 2.779,3.486 2.269,5.83C2.027,6.983 2.001,8.263 2.047,9.436C2.112,11.12 2.125,12.797 2.275,14.475C2.38,15.588 2.56,16.692 2.818,17.779C3.302,19.788 5.257,21.459 7.173,22.138C9.222,22.848 11.429,22.967 13.541,22.48C13.773,22.423 14.002,22.36 14.231,22.287C14.744,22.122 15.345,21.936 15.79,21.611C15.796,21.608 15.8,21.601 15.803,21.595C15.806,21.588 15.81,21.581 15.81,21.571L15.81,19.947C15.81,19.947 15.81,19.934 15.803,19.927C15.803,19.921 15.796,19.914 15.79,19.911C15.783,19.907 15.777,19.904 15.77,19.901L15.751,19.901C14.397,20.229 13.008,20.395 11.619,20.391C9.222,20.391 8.578,19.238 8.395,18.761C8.248,18.346 8.153,17.912 8.114,17.474C8.114,17.468 8.114,17.461 8.117,17.455C8.117,17.448 8.124,17.441 8.13,17.438C8.137,17.435 8.143,17.431 8.15,17.428L8.173,17.428C9.503,17.753 10.87,17.919 12.24,17.919C12.57,17.919 12.897,17.919 13.227,17.909C14.603,17.869 16.055,17.799 17.411,17.531C17.444,17.524 17.48,17.518 17.509,17.511C19.647,17.093 21.681,15.787 21.887,12.479C21.893,12.35 21.913,11.114 21.913,10.981C21.913,10.52 22.06,7.723 21.89,6.002L21.887,5.996Z"
+  ></path>
+  <path
+    d="M6.061,7.288C6.061,6.612 6.594,6.069 7.254,6.069C7.915,6.069 8.447,6.616 8.447,7.288C8.447,7.961 7.915,8.508 7.254,8.508C6.594,8.508 6.061,7.961 6.061,7.288Z"
+    stroke-width="1"
+    fill="currentColor"
+  ></path>
+</svg>
+</div>
+            </a>
+          
+        
+      </nav>
+    </div>
+
+    <!-- theme switch -->
+    <div
+  role="region"
+  class="theme-switch | cluster mt-xs"
+  style="--cluster-horizontal-alignment: center; --gutter: 0.5rem"
+  aria-labelledby="theme-switcher-label"
+  data-theme-switcher
+  hidden
+>
+  <h2 id="theme-switcher-label">Theme</h2>
+  <button class="button" id="light-theme-toggle" data-theme="light">
+    <span>light</span>
+  </button>
+  <button class="button" id="dark-theme-toggle" data-theme="dark">
+    <span>dark</span>
+  </button>
+</div>
+
+
+    <div class="text-center mt-m-l">
+      <a class="creator text-step-min-1" href="https://www.lenesaile.com"
+        >Made with <span><svg
+  width="1em"
+  height="1em"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke="currentColor"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path
+    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z"
+  />
+</svg>
+</span> by
+        Lene Saile and modified by Julius Bartel</a
+      >
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
