@@ -5,12 +5,35 @@
   <link href="http://localhost:8080/feed.xml" rel="self" />
   <link href="http://localhost:8080/" />
   
-  <updated>2024-03-27T14:51:24Z</updated>
+  <updated>2024-04-16T08:12:29Z</updated>
   <id>http://localhost:8080/</id>
   <author>
     <name>Julius Bartel</name>
     <email>hello@bartel.tech</email>
   </author>
+  <entry>
+    <title>Casters for my keyboard stand</title>
+    <link href="http://localhost:8080/blog/casters-for-my-keyboard-stand/" />
+    <updated>2024-04-16T08:12:29Z</updated>
+    <id>http://localhost:8080/blog/casters-for-my-keyboard-stand/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;h1 id=&quot;intro&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/casters-for-my-keyboard-stand/#intro&quot;&gt;Intro&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Hi there! I got a home studio. But I do not have that much space in my flat, so things need to be movable. I bought a keyboard stand for my Kontrol S61 but it did not have any casters - so I 3D printed some adapters to add some.&lt;/p&gt;
+&lt;h1 id=&quot;materials&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/casters-for-my-keyboard-stand/#materials&quot;&gt;Materials&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;The parts are avaiable on AliExpress. Maybe you got some screws &amp;amp; inserts laying around - who knows.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.aliexpress.com/item/1005005901255890.html&quot; rel=&quot;noopener&quot;&gt;Casters&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.aliexpress.com/item/1005001668155119.html&quot; rel=&quot;noopener&quot;&gt;M4x6 Screws with flat head&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.aliexpress.com/item/1005003684855840.html&quot; rel=&quot;noopener&quot;&gt;M3x8 Screws with regular head&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.aliexpress.com/item/1005004535859664.html&quot; rel=&quot;noopener&quot;&gt;M4 Brass Insert OD 6mm&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.aliexpress.com/item/1005004535859664.html&quot; rel=&quot;noopener&quot;&gt;M3 Brass Insert OD 4.5mm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The mounts were 3D printed using Extrudr PLA.&lt;/p&gt;
+&lt;h1 id=&quot;design&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/casters-for-my-keyboard-stand/#design&quot;&gt;Design&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;WIP!&lt;/p&gt;
+</content
+    >
+  </entry>
   <entry>
     <title>Gude!</title>
     <link href="http://localhost:8080/blog/gude/" />
