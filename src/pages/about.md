@@ -21,15 +21,15 @@ My Name is Julius. I just finished my masters degree in information technology a
 9/2019-4/2020 Internship Bruker Optics (Electronics Development)
 
 ## University
-B.Sc. Automation Technologies University of Applied Science Mannheim
-M.Sc. Information Technologies University of Applied Science Mannheim
+Bachelor of Science Automation Technologies University of Applied Science Mannheim
+Master of Science Technologies University of Applied Science Mannheim
 
 ## Voluntary Work
 Co-Founder of Fusioniert, Heidelberg! e.V. 
 Part of RaumZeitLabor e.V.
 
 ## Skills
-Altium
+Altium 
 KiCad
 LTSpice
 Fusion360
