@@ -1,5 +1,8 @@
 ---
 title: Casters for my keyboard stand
+tags:
+    - 3D printing
+    - Fusion 360
 ---
 
 # Intro

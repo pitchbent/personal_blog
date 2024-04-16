@@ -5,12 +5,27 @@
   <link href="http://localhost:8080/feed.xml" rel="self" />
   <link href="http://localhost:8080/" />
   
-  <updated>2024-04-16T08:12:29Z</updated>
+  <updated>2024-04-16T08:29:59Z</updated>
   <id>http://localhost:8080/</id>
   <author>
     <name>Julius Bartel</name>
     <email>hello@bartel.tech</email>
   </author>
+  <entry>
+    <title>LED Driver</title>
+    <link href="http://localhost:8080/blog/led-driver/" />
+    <updated>2024-04-16T08:29:59Z</updated>
+    <id>http://localhost:8080/blog/led-driver/</id>
+    <content
+      xml:lang="en_EN"
+      type="html"
+      >&lt;h1 id=&quot;intro&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/led-driver/#intro&quot;&gt;Intro&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;I really like to build things, often using power tools. After a couple of years of buying power tools, I got a lot of Metabo Batteries laying around. So why don’t build a LED driver which works with them?! This also is a good opportunity to further improve my skills with ECAD and electronics in general.&lt;/p&gt;
+&lt;h1 id=&quot;materials&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/led-driver/#materials&quot;&gt;Materials&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&quot;design&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/led-driver/#design&quot;&gt;Design&lt;/a&gt;&lt;/h1&gt;
+</content
+    >
+  </entry>
   <entry>
     <title>Casters for my keyboard stand</title>
     <link href="http://localhost:8080/blog/casters-for-my-keyboard-stand/" />
