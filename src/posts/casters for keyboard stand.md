@@ -6,6 +6,8 @@ tags:
 ---
 
 # Intro
+{% eleventyImage "./src/assets/images/blog/caster/mounted.jpeg", "Mounted Part"%}
+
 Hi there! I got a home studio. But I do not have that much space in my flat, so things need to be movable. I bought a keyboard stand for my Kontrol S61 but it did not have any casters - so I 3D printed some adapters to add some. 
 
 
@@ -26,3 +28,9 @@ The mounts were 3D printed using Extrudr PLA.
 The casters are designed to have a snug fit onto the feet of the keyboard stand. To further improve it, I added a grub screw. All threads are done with brass inserts, which can be easily inserted using a soldering iron. I designed the part using Fusion360. The files are avaiable at the end of this post.
 
 {% eleventyImage "./src/assets/images/blog/caster/caster_3d.png", "Mount for caster", "3D modelled part which features the mounting holes and hole for the grub screw"%}
+
+# Assembly
+
+I 3D printed the parts using PLA and my "trustworthy" Ender printer. The brass inserts were pressed in with a hot soldering iron. The mounting holes for the casters are M4 inserts, the insert for the grub screw uses a M3 insert. Before adding the casters, you need to put the feet onto the keyboard stand and tighten the M3 grub screw. The casters are mounted using the M4 screws.
+
+{% eleventyImage "./src/assets/images/blog/caster/assembled.jpeg", "Assembled Part"%}
