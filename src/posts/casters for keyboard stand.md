@@ -6,13 +6,13 @@ tags:
 ---
 
 # Intro
-{% eleventyImage "./src/assets/images/blog/caster/mounted.jpeg", "Mounted Part"%}
 
 Hi there! I got a home studio. But I do not have that much space in my flat, so things need to be movable. I bought a keyboard stand for my Kontrol S61 but it did not have any casters - so I 3D printed some adapters to add some. 
 
+{% eleventyImage "./src/assets/images/blog/caster/mounted.jpeg", "Mounted Part"%}
 
 # Materials
-The parts are avaiable on AliExpress. Maybe you got some screws & inserts laying around - who knows.
+The parts besides the stand are available on AliExpress. Maybe you got some screws & inserts laying around - who knows.
 
 [Keyboard Stand](https://www.thomann.de/de/millenium_ks1010_keyboardstaender_economy.htm)
 [Casters](https://www.aliexpress.com/item/1005005901255890.html)
@@ -34,3 +34,7 @@ The casters are designed to have a snug fit onto the feet of the keyboard stand.
 I 3D printed the parts using PLA and my "trustworthy" Ender printer. The brass inserts were pressed in with a hot soldering iron. The mounting holes for the casters are M4 inserts, the insert for the grub screw uses a M3 insert. Before adding the casters, you need to put the feet onto the keyboard stand and tighten the M3 grub screw. The casters are mounted using the M4 screws.
 
 {% eleventyImage "./src/assets/images/blog/caster/assembled.jpeg", "Assembled Part"%}
+
+# Files
+
+The files are available on [Github](https://github.com/pitchbent/Millenium-KS-1010-Caster) and [Thingiverse](https://www.thingiverse.com/thing:6581315). On Github you can also find the Fusion360 project.
