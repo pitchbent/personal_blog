@@ -8,18 +8,31 @@ youtube: true
 
 
 
-{% eleventyImage "./src/assets/images/me/me1.jpeg", "Looking at Richters pictures at MdbK Leipzig", "That's me!"%}
+{% eleventyImage "./src/assets/images/me/me1.jpeg", "Looking at camera, smiling", "That's me!"%}
 
 **Hello!**
 
-My Name is Julius. I just finished my masters degree in information technology at the University of Applied Sciences Mannheim.
+My Name is Julius. I just finished my masters degree in information technology at the University of Applied Sciences Mannheim. 
 
 # Resumee
 
 ## Work Experience
+11/2020-2/2024 Working student LGBA Hockenheim (Electronics Development, Embedded, Automation)
+9/2019-4/2020 Internship Bruker Optics (Electronics Development)
 
-## School
+## University
+B.Sc. Automation Technologies University of Applied Science Mannheim
+M.Sc. Information Technologies University of Applied Science Mannheim
 
 ## Voluntary Work
+Co-Founder of Fusioniert, Heidelberg! e.V. 
+Part of RaumZeitLabor e.V.
 
 ## Skills
+Altium
+KiCad
+LTSpice
+Fusion360
+CoDeSys
+C
+Linux
