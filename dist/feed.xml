@@ -20,7 +20,7 @@
       xml:lang="en_EN"
       type="html"
       >&lt;h1 id=&quot;intro&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/led-driver/#intro&quot;&gt;Intro&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;I really like to build things, often using power tools. After a couple of years of buying power tools, I got a lot of Metabo Batteries laying around. So why don’t build a LED driver which works with them?! This also is a good opportunity to further improve my skills with ECAD and electronics in general.&lt;/p&gt;
+&lt;p&gt;I really like to build things, often using power tools. After a couple of years of buying them, I got a lot of Metabo batteries laying around. So why don’t build a LED driver which works with them?! This also is a good opportunity to further improve my skills with ECAD and electronics in general.&lt;/p&gt;
 &lt;h1 id=&quot;materials&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/led-driver/#materials&quot;&gt;Materials&lt;/a&gt;&lt;/h1&gt;
 &lt;h1 id=&quot;design&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/led-driver/#design&quot;&gt;Design&lt;/a&gt;&lt;/h1&gt;
 </content
@@ -38,15 +38,16 @@
 &lt;p&gt;Hi there! I got a home studio. But I do not have that much space in my flat, so things need to be movable. I bought a keyboard stand for my Kontrol S61 but it did not have any casters - so I 3D printed some adapters to add some.&lt;/p&gt;
 &lt;h1 id=&quot;materials&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/casters-for-my-keyboard-stand/#materials&quot;&gt;Materials&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;The parts are avaiable on AliExpress. Maybe you got some screws &amp;amp; inserts laying around - who knows.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.aliexpress.com/item/1005005901255890.html&quot; rel=&quot;noopener&quot;&gt;Casters&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.thomann.de/de/millenium_ks1010_keyboardstaender_economy.htm&quot; rel=&quot;noopener&quot;&gt;Keyboard Stand&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.aliexpress.com/item/1005005901255890.html&quot; rel=&quot;noopener&quot;&gt;Casters&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.aliexpress.com/item/1005001668155119.html&quot; rel=&quot;noopener&quot;&gt;M4x6 Screws with flat head&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.aliexpress.com/item/1005003684855840.html&quot; rel=&quot;noopener&quot;&gt;M3x8 Screws with regular head&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.aliexpress.com/item/1005004535859664.html&quot; rel=&quot;noopener&quot;&gt;M4 Brass Insert OD 6mm&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;https://www.aliexpress.com/item/1005004535859664.html&quot; rel=&quot;noopener&quot;&gt;M3 Brass Insert OD 4.5mm&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The mounts were 3D printed using Extrudr PLA.&lt;/p&gt;
 &lt;h1 id=&quot;design&quot;&gt;&lt;a class=&quot;heading-anchor&quot; href=&quot;http://localhost:8080/blog/casters-for-my-keyboard-stand/#design&quot;&gt;Design&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;WIP!&lt;/p&gt;
-</content
+&lt;p&gt;The casters are designed to have a snug fit onto the feet of the keyboard stand. To further improve it, I added a grub screw. All threads are done with brass inserts, which can be easily inserted using a soldering iron. I designed the part using Fusion360. The files are avaiable at the end of this post.&lt;/p&gt;
+&lt;figure class=&quot;flow&quot;&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;http://localhost:8080/assets/images/caster_3d-440w.avif 440w, http://localhost:8080/assets/images/caster_3d-880w.avif 880w, http://localhost:8080/assets/images/caster_3d-1024w.avif 1024w&quot; sizes=&quot;90vw&quot; /&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;http://localhost:8080/assets/images/caster_3d-440w.webp 440w, http://localhost:8080/assets/images/caster_3d-880w.webp 880w, http://localhost:8080/assets/images/caster_3d-1024w.webp 1024w&quot; sizes=&quot;90vw&quot; /&gt;&lt;source type=&quot;image/jpeg&quot; srcset=&quot;http://localhost:8080/assets/images/caster_3d-440w.jpeg 440w, http://localhost:8080/assets/images/caster_3d-880w.jpeg 880w, http://localhost:8080/assets/images/caster_3d-1024w.jpeg 1024w&quot; sizes=&quot;90vw&quot; /&gt;&lt;img src=&quot;http://localhost:8080/assets/images/caster_3d-1024w.jpeg&quot; width=&quot;1024&quot; height=&quot;621&quot; alt=&quot;Mount for caster&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; /&gt;&lt;/picture&gt;&lt;figcaption&gt;3D modelled part which features the mounting holes and hole for the grub screw&lt;/figcaption&gt;&lt;/figure&gt;</content
     >
   </entry>
   <entry>
